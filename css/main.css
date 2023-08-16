@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+:root {
+  --red: rgb(215, 26, 33);
+}
+body {
+  font-family: iransans;
+}
+@font-face {
+  font-family: iransans;
+  src: url(../media/font/IRANSansX-Light.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: iransans;
+  src: url(../media/font/IRANSans_Medium.woff);
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+div.header {
+  width: 100%;
+  height: 100px;
+  background-color: #252525;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+div.header > nav {
+  width: 65%;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 15px;
+}
+div.header > nav > ul {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+  align-items: center;
+}
+div.header > nav > ul > li {
+  list-style: none;
+  border-right: 1px solid #adb0b2;
+}
+div.header > nav > ul > li:nth-of-type(1) {
+  border: unset;
+}
+div.header > nav > ul > li > a {
+  display: block;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 35px;
+  padding: 0 15px;
+  color: #adb0b2;
+}
+div.header > nav > ul > li > a:hover {
+  color: white;
+}
+div.header > div.logo {
+  position: absolute;
+  top: 40%;
+  right: 17%;
+}
+div.box {
+  width: 100%;
+  height: 500px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+}
+div.box > div.ever {
+  width: 60%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+div.box > div.ever > div.img {
+  width: 35%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+div.text {
+  width: 45%;
+  height: inherit;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  justify-content: center;
+  row-gap: 10px;
+  font-weight: 300;
+}
+div.text > h1 {
+  color: var(--red);
+  font-weight: 350;
+}
+div.text > h3 {
+  font-weight: 350;
+}
+div.text > p {
+  margin: 20px 0;
+  line-height: 30px;
+  color: gray;
+}
+div > div > div > a {
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 10px;
+  color: gray;
+  border: 1px solid lightgray;
+  font-weight: 300;
+}
+div > div > div > a:hover {
+  background-color: var(--red);
+  color: white;
+}
+div.content {
+  width: 100%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+div.content > div.introduce {
+  width: 50%;
+  height: inherit;
+}
+div.content > div.introduce > h2:nth-of-type(2) {
+  margin-top: 90px;
+}
+div.content > div.introduce span {
+  color: var(--red);
+}
+div.content h2 {
+  color: var(--red);
+  margin: 20px 0;
+  font-weight: 500;
+}
+div.content > div.introduce > p {
+  line-height: 35px;
+  color: gray;
+  font-weight: 300;
+  margin: 20px 0;
+}
+div.statistic {
+  width: 60%;
+  height: 230px;
+  margin: 100px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+div.statistic p {
+  line-height: 30px;
+  color: gray;
+  font-weight: 300;
+}
+div.statistic > div.item {
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+}
+div.Bimg1 {
+  width: 100%;
+  height: 600px;
+  margin-top: 20px;
+  background: url(../media/image2-new.jpg) no-repeat center center / cover;
+}
+div.underimg {
+  width: 100%;
+  height: 20px;
+  background-color: beige;
+  position: relative;
+}
+div.underimg > div.under {
+  width: 300px;
+  height: 100px;
+  background-color: var(--red);
+  position: absolute;
+  bottom: 0;
+  right: 400px;
+}
+div.underimg > div.under > p {
+  line-height: 50px;
+  color: white;
+  margin-right: 20px;
+  font-weight: 300;
+}
+div.underimg > div.under > p:nth-last-of-type(2) {
+  font-size: 31px;
+}
+div.underimg > div.under > p:nth-last-of-type(1) {
+  font-size: 21px;
+}
+div.Ccontent {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+}
+div.Ccontent > div.product {
+  width: 50%;
+  height: 330px;
+  margin: 0 auto;
+}
+div.product span {
+  color: red;
+  font-weight: 500;
+}
+div.Ccontent h2 {
+  color: var(--red);
+  margin: 20px 0;
+  font-weight: 500;
+}
+div.Ccontent p {
+  line-height: 35px;
+  color: gray;
+  text-align: justify;
+  margin: 20px 0;
+  font-weight: 300;
+}
+div.Ccontent div.link {
+  margin-top: 30px;
+}
+div.Bimg2 {
+  width: 100%;
+  height: 600px;
+  background: url(../media/image3-new.jpg) no-repeat center center / cover;
+}
+
+div.Bimg3 {
+  width: 100%;
+  height: 600px;
+  margin-top: 20px;
+  background: url(../media/image4-new.jpg) no-repeat center center / cover;
+}
+div.Ccontent p:nth-of-type(1) {
+  margin-bottom: 0;
+}
+div.Ccontent p:nth-of-type(2) {
+  margin-top: 0;
+}
+div:nth-of-type(9) > div.product {
+  height: 390px;
+}
+div:nth-of-type(12) > div.product {
+  height: 370px;
+}
+div.parallax {
+  height: 250px;
+  background: url(../media/recipe-baner-1.png) no-repeat center center fixed;
+}
+div.kitchen {
+  height: 80px;
+}
+div.kitchen > div {
+  width: 60%;
+  margin: 0 auto;
+  text-align: start;
+}
+div.kitchen span {
+  line-height: 80px;
+}
+div.kitchen span:nth-of-type(1) {
+  color: red;
+  font-size: 20px;
+}
+div.kitchen span:nth-of-type(2) {
+  color: gray;
+  font-size: 16px;
+  font-weight: 300;
+}
+div.recepie {
+  height: 650px;
+  background-color: #cde4b0;
+}
+div.recepie > div {
+  width: 60%;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-between;
+  column-gap: 10px;
+  align-items: center;
+}
+div.recepie > div > div.post {
+  background-color: white;
+  display: flex;
+  flex-flow: column ;
+}
+
+div.recepie > div > div.post img {
+  width: 320px;
+  height: 290px;
+}
+div.recepie > div > div.post img:hover {
+  opacity: 0.8;
+}
+div.recepie > div > div.post > div {
+  height: 260px;
+  padding: 25px;
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 20px;
+  justify-content: center;
+}
+div.recepie > div > div.post > div > h3 {
+  color: red;
+  font-weight: 300;
+}
+div.recepie > div > div.post > div > p {
+  font-size: 14px;
+  color: gray;
+  font-weight: 300;
+  text-align: justify;
+  font-weight: 300;
+}
+div.recepie > div > div.post > div > a {
+  width: 100px;
+  font-size: 15px;
+  padding: 7px 14px;
+}
+
+div.footer{
+  height: 110px;
+  background-color: #252525 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.footer > p{
+  color: #adb0b2;
+  font-weight: 300;
+}
